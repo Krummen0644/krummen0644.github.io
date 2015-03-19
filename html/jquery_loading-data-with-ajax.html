@@ -13,10 +13,19 @@
 	<p>This is a new change to upload</p>
 
 	<script type="application/javascript">
-		$.get("testing_ajax.html", function(data)
-			{
-				alert(data);
-			});
+		// Preferable to use $.ajax to make the call
+		//$.get("testing_ajax.html", function(data)
+		//	{
+		//		alert(data);
+		//	});
+
+		$.ajax(
+		{
+			url:"testing_ajax.html"
+		}).done(function(data)
+		{
+			alert(date);
+		})
 	</script>
 
 	</body>
