@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Changing a Style</title>
+		<link rel="stylesheet" type="text/css" href="../css/mystyles.css" />
+		<script type="application/javascript" src="../scripts/myscript.js" ></script>
+		<script type="application/javascript" src="../scripts/jquery-1.11.2.js" ></script>
+	</head>
+	<body>
+
+	<div id="greenCircle"> </div>
+	<div class="redSquare"> </div>
+	<div class="redSquare"> </div>
+	
+
+		<script type="application/javascript">
+
+		var height, width;
+
+		$("#greenCircle").click(function()
+		{
+			// Purely to return height and width without font size type
+			//height = $(this).height();
+			//width = $(this).width();
+			//alert( height + "px" + "\n" + width + "px" );
+
+			//To hide the elements
+			//$(this).css("display", "none"); //or $(this).hide();
+
+			$(".redSquare").fadeOut();
+
+		});
+		
+		</script>
+
+	</body>
+</html>

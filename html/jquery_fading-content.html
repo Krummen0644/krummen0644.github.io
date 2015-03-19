@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Changing a Style</title>
+		<link rel="stylesheet" type="text/css" href="../css/mystyles.css" />
+		<script type="application/javascript" src="../scripts/myscript.js" ></script>
+		<script type="application/javascript" src="../scripts/jquery-1.11.2.js" ></script>
+	</head>
+	<body>
+
+	<p id="parentParagraph">This paragraph has some content in it.</p>
+	<button id="faderOut" type="submit">Fade Out</button>
+	<button id="faderIn" type="submit">Fade In</button>
+
+	<script type="application/javascript">
+	
+	$("#faderOut").click(function()
+	{
+		$("#parentParagraph").fadeOut(2000, function()
+			{
+				alert("Fade out completed");
+			});
+	});
+
+	$("#faderIn").click(function()
+	{
+		$("#parentParagraph").fadeIn();
+	});
+
+	</script>
+
+	</body>
+</html>

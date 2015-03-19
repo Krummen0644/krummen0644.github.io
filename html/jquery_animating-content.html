@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Changing a Style</title>
+		<link rel="stylesheet" type="text/css" href="../css/mystyles.css" />
+		<script type="application/javascript" src="../scripts/myscript.js" ></script>
+		<script type="application/javascript" src="../scripts/jquery-1.11.2.js" ></script>
+	</head>
+	<body>
+
+	<div id="greenCircle"></div>
+
+	<script type="application/javascript">
+	
+	$("#greenCircle").click(function()
+	{
+		// Properties have to be broken down in a 
+		// similar fashion as you would declare and 
+		// initialize an array
+		$(this).animate(
+			{
+				width: 			"400px", 
+				height: 		"400px", 
+				borderRadius: 	"200px",
+				marginLeft: 	"100px",
+				marginTop: 		"100px",  
+			}, 800);
+	});
+
+	</script>
+
+	</body>
+</html>

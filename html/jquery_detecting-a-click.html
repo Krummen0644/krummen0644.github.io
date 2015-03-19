@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Detecting a Click</title>
+		<link rel="stylesheet" type="text/css" href="../css/mystyles.css" />
+		<script type="application/javascript" src="../scripts/myscript.js" ></script>
+		<script type="application/javascript" src="../scripts/jquery-1.11.2.js" ></script>
+	</head>
+	<body>
+
+	<div class="redSquare">Here</div>
+	<div class="redSquare>"></div>
+	<div id="greenCircle"></div>
+	
+	<p id="firstPElement">This is a text area.</p>	
+
+	<p>This is designated for the greenCircle element</p>
+
+		<script>
+		// This will change the first paragraph text only after 
+		// the circle has been clicked
+		$(".redSquare").click(function(){
+			$("#firstPElement").html("This is new text");
+		});
+
+		// After you hover the green circle
+		// the second paragraph will change its text
+		// due to the CSS selector
+		$("#greenCircle").hover(function()
+		{
+			$("p+p").html("Complex css selector engaged");
+		});
+
+		</script>
+
+	</body>
+</html>
